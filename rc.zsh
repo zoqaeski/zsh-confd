@@ -4,7 +4,7 @@
 zstyle ':omz:module:editor' keymap 'emacs'
 
 # Auto convert .... to ../..
-zstyle ':omz:module:editor' dot-expansion 'no'
+zstyle ':omz:module:editor' dot-expansion 'yes'
 
 # Set case-sensitivity for completion, history lookup, etc.
 zstyle ':omz:*:*' case-sensitive 'no'
@@ -42,6 +42,9 @@ zstyle ':omz:load' omodule \
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 zstyle ':omz:module:prompt' theme 'zoqaeski'
+
+# Disable diff colours
+zstyle ':omz:module:utility:diff' color 'no'
 
 # This will make you shout: OH MY ZSHELL!
 source "$ZSH_CONFD/init.zsh"
