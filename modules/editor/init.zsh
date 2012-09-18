@@ -314,9 +314,9 @@ for keymap in 'emacs' 'viins'; do
   bindkey -M "$keymap" "$key_info[Control]I" expand-or-complete
 
   # Expand .... to ../..
-  if zstyle -t ':omz:module:editor' dot-expansion; then
+  #if zstyle -t ':omz:module:editor' dot-expansion; then
     bindkey -M "$keymap" "." expand-dot-to-parent-directory-path
-  fi
+  #fi
 
   # Display an indicator when completing.
   bindkey -M "$keymap" "$key_info[Control]I" \
