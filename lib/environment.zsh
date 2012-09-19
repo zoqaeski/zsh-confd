@@ -3,6 +3,7 @@
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Robbie Smith <zoqaeski@gmail.com>
 #
 
 #
