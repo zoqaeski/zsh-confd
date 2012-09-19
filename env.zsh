@@ -8,7 +8,6 @@
 
 # Set the path to my zsh configurations
 export ZSH_CONFD=$HOME/.config/zsh
-export OMZ=$ZSH_CONFD
 
 # Paths
 typeset -gU cdpath fpath mailpath manpath path
