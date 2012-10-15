@@ -39,9 +39,9 @@ setopt HIST_BEEP                 # Beep when accessing non-existent history.
 # Lists the ten most used commands.
 alias history-stat="history . | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
 
-# Emacs and Vi
-for keymap in 'emacs' 'viins'; do
-  bindkey -M "$keymap" "$key_info[Up]" up-line-or-search
-  bindkey -M "$keymap" "$key_info[Down]" down-line-or-search
-done
+# Emacs and Vi - moved this to lib/key-bindings.zsh
+#for keymap in 'emacs' 'viins'; do
+#  bindkey -M "$keymap" "$key_info[Up]" up-line-or-search
+#  bindkey -M "$keymap" "$key_info[Down]" down-line-or-search
+#done
 
