@@ -131,7 +131,7 @@ fi
 # Serves a directory via HTTP.
 alias http-serve='python -m SimpleHTTPServer'
 
-# Colourise Pacman
+# Colourise Pacman - disabled until I reinstall everything.
 alias pacman='pacman-color'
 
 # Backlight

@@ -5,6 +5,15 @@
 # (Not sure if I need this, as it's also set in ~/.zshenv
 export ZSH_CONFD=$HOME/.config/zsh
 
+# Not setting $PATH properly. Try it again
+PATH=$HOME/bin:$PATH; export PATH
+
+# Which plugins would you like to load? (plugins can be found in $ZSH_CONFD/plugins/*)
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(rsync)
+
+# Plugin configuration
+
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':omz:editor' keymap 'emacs'
 
@@ -26,15 +35,14 @@ zstyle ':omz:terminal' auto-title 'yes'
 zstyle ':omz:load' zmodule 'attr' 'stat'
 
 # Set the Zsh functions to load (man zshcontrib).
-zstyle ':omz:load' zfunction 'zargs' 'zmv'
+zstyle ':omz:load' zfunction 'zargs' 'zmv' 'zcalc'
 
 # Set name of the theme to load.
 # Look in $ZSH_CONFD/themes/
 zstyle ':omz:prompt' theme 'zoqaeski'
 
-# Which plugins would you like to load? (plugins can be found in $ZSH_CONFD/plugins/*)
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=()
+# ssh-agent
+#zstyle ':omz:plugins:ssh-agent' agent-forwarding 'on'
 
 source $ZSH_CONFD/init.zsh
 

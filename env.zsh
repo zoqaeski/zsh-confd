@@ -12,6 +12,7 @@ export ZSH_CONFD=$HOME/.config/zsh
 # Paths
 typeset -gU cdpath fpath mailpath manpath path
 typeset -gUT INFOPATH infopath
+#typeset -gUT PATH path
 
 # Set the the list of directories that cd searches.
 # cdpath=(
@@ -50,6 +51,8 @@ for path_file in /etc/paths.d/*(.N); do
   path+=($(<$path_file))
 done
 unset path_file
+
+PATH=$HOME/bin:$PATH; export PATH
 
 # Language
 if [[ -z "$LANG" ]]; then
